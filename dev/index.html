@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Blog</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-expand-md sticky-top p-4 cabecalho" id="cabecalho" data-bs-smooth-scroll="true">
+        <div class="container">
+            <div class="title cabecalho__titulo">
+                <h1 class="cabecalho__titulo__txt"><span class="cabecalho__titulo__txt__destaque">SST </span>Blog</h1>
+            </div>
+            <button class="navbar-toggler cabecalho__botao" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon cabecalho__botao"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-lg-flex d-md-flex cabecalho__navs">
+                    <li class="nav-item fw-bold"><a href="#art1" class="nav-link">Artigo 1</a></li>
+                    <li class="nav-item fw-bold"><a href="#art2" class="nav-link">Artigo 2</a></li>
+                    <li class="nav-item fw-bold"><a href="#art3" class="nav-link">Artigo 3</a></li>
+                    <li class="nav-item fw-bold"><a href="#video1" class="nav-link">Vídeos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Conteúdo do site -->
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">   
+        <section id="art1" class="container mt-5">
+            <h2>Avaliação de Riscos no PGR: Tudo o que deve conter em um cenário hipotético de aplicabilidade</h2>
+            <h3>Introdução</h3>
+            <p>A exposição ao ruído ocupacional é uma ameaça ao bem-estar dos trabalhadores, sendo uma das principais causas de problemas de saúde no ambiente laboral. Esse risco é especialmente significativo em indústrias e setores de serviços com altos níveis de emissão sonora e afeta diretamente a qualidade de vida dos empregados e a produtividade das empresas. O ruído contínuo e excessivo pode levar à perda auditiva irreversível, além de outras complicações físicas e psicológicas. Quanto mais intensa e prolongada for a exposição ao ruído ocupacional, maiores serão as probabilidades de desenvolver Perda Auditiva Induzida por Ruído Ocupacional (PAIRO). Além disso, a exposição contínua e sem os devidos cuidados pode resultar também em insônia, hipertensão, taquicardia, estresse emocional e até mesmo na redução da capacidade de concentração. Nesse contexto, este artigo visa explorar como o Laudo Técnico das Condições Ambientais do Trabalho (LTCAT) e o Sistema de Escrituração Digital das Obrigações Fiscais Previdenciárias e Trabalhistas (eSocial) abordam o controle e a gestão do ruído ocupacional, dando ênfase à importância de medidas preventivas e corretivas para garantir a saúde dos trabalhadores.</p>
+            
+            <h3>O que é Ruído Ocupacional?</h3>
+            <p>Ruído ocupacional é definido como qualquer som indesejado ou nível de ruído elevado presente no ambiente de trabalho que pode interferir na concentração, comunicação e produtividade dos trabalhadores, podendo também representar um risco potencial à saúde auditiva dos indivíduos expostos a ele.</p>
+            
+            <h3>LTCAT e a Avaliação do Ruído</h3>
+            <p>O LTCAT é um documento técnico emitido pelo INSS para avaliar as condições de trabalho e identificar os agentes nocivos à saúde. Este laudo é essencial para a concessão de aposentadoria especial e deve seguir as normas regulamentadoras, como a NR-15, que define os limites de tolerância para a exposição ao ruído. O LTCAT contém informações essenciais sobre as condições do ambiente de trabalho do funcionário, incluindo os agentes nocivos aos quais ele foi exposto, o tempo de exposição, suas funções na empresa e as medidas de controle implementadas. O LTCAT é crucial na criação do Perfil Profissiográfico Previdenciário (PPP), isto é um documento que reúne dados sobre a história laboral de um trabalhador e que geralmente é registrado no eSocial para informar ao INSS se a função do empregado se qualifica para aposentadoria especial. Em relação ao Ruído Ocupacional, a avaliação do ruído no LTCAT inclui as dosimetrias de ruídos que os colaboradores estão expostos ao longo da jornada de trabalho. Este laudo somente deve ser elaborado por um engenheiro de segurança do trabalho ou por um médico do trabalho, devidamente registrado em seus conselhos profissionais.</p>
+            <p>A avaliação do ruído no LTCAT deve incluir:</p>
+            <ul>
+                <li><strong>Nível de Exposição (NE):</strong> Medição do nível de ruído a que o trabalhador está exposto.</li>
+                <li><strong>Dose (D):</strong> Quantificação do tempo de exposição ao ruído.</li>
+                <li><strong>Nível de Exposição Normalizado (NEN):</strong> Ajuste do nível de exposição considerando jornadas de trabalho diferentes.</li>
+            </ul>
+            <h4>Metodologias de Avaliação</h4>
+            <p>A avaliação do ruído no LTCAT para aposentadoria especial envolve a escolha entre dois fatores de duplicação de dose: q=3 e q=5. Esta escolha influencia diretamente os direitos previdenciários dos trabalhadores (Sistema ESO, 2023). Os fatores q=3 e q=5 representam diferentes incrementos de duplicação de dose de ruído, onde q=3 reduz pela metade o tempo de exposição a cada aumento de 3 dB, e q=5 faz o mesmo a cada 5 dB. A NHO 01 da Fundacentro recomenda q=3, enquanto a NR 15 do Ministério do Trabalho adota q=5 para definir os limites de tolerância (Sistema ESO, 2023).</p>
+            <p>Para evitar complicações legais, recomenda-se o uso de q=3, pois é mais benéfico para o trabalhador e possui respaldo legal mais sólido. Apesar de q=5 também ser juridicamente válido, ele apresenta maior risco de litígios. A prática recomendada é registrar ambas as avaliações, q=3 e q=5, para diferentes fins: insalubridade (trabalhista) e aposentadoria especial (previdenciária) (Sistema ESO, 2023).</p>
+            
+            <h3>Ruído Ocupacional no eSocial</h3>
+            <p>O eSocial é uma plataforma unificada para a transmissão de dados fiscais, previdenciários e trabalhistas. A gestão do ruído ocupacional no eSocial envolve o registro preciso das condições de exposição dos trabalhadores. As informações obrigatórias incluem os níveis de ruído medidos, a descrição das atividades dos trabalhadores expostos e as medidas de controle adotadas. Empresas que utilizam soluções de software, como as oferecidas pela Sistemas ESO, podem simplificar a gestão de SST no eSocial, assegurando que todas as informações necessárias sejam registradas e enviadas corretamente. Essas soluções ajudam a monitorar os níveis de exposição dos trabalhadores e a implementação das medidas de controle, proporcionando um ambiente de trabalho mais seguro e eficiente.</p>
+            <p>Com a introdução dos eventos de SST no eSocial, especialmente o S-2240, surgiram muitas dúvidas sobre como registrar o ruído ocupacional. De acordo com o Manual de Orientação do eSocial (MOS), o registro do ruído é obrigatório quando os níveis atingem o nível de ação definido pela NR-09, que é metade do limite de tolerância da NR-15. Este limite é de 85 dBA para uma jornada de oito horas, e a metade dessa dose é 80 dBA. Portanto, qualquer medição de ruído a partir de 80 dBA deve ser registrada, independentemente do uso de Equipamento de Proteção Individual (EPI), que não é considerado na medição inicial.</p>
+            <p>Ainda que o trabalhador utilize EPI que reduza o ruído percebido, ele deve informar o nível de ruído "in natura" no eSocial, pois a medição deve refletir a condição ambiental real. A legislação exige que essas informações sejam registradas para garantir a precisão na avaliação das condições de trabalho e na concessão de benefícios, como a aposentadoria especial. Assim, mesmo que o EPI atenue o ruído, o valor a ser reportado no eSocial é o nível de ruído medido sem a proteção do EPI.</p>
+            
+            <h3>Conclusão</h3>
+            <p>A gestão do ruído ocupacional através do LTCAT e do eSocial é vital para a saúde e segurança dos trabalhadores. Uma avaliação precisa e a implementação de medidas preventivas adequadas são essenciais para minimizar os riscos associados ao ruído. A integração desses dados no eSocial assegura a conformidade legal e facilita a concessão de benefícios previdenciários, como a aposentadoria especial. Empregadores e profissionais de saúde e segurança do trabalho devem trabalhar juntos para promover um ambiente de trabalho seguro, reduzindo a exposição ao ruído e protegendo a saúde auditiva dos trabalhadores.</p>
+        
+            <h3>Referências</h3>
+            <div class="container references d-md-flex justify-content-between">
+                <a href="https://sistemaeso.com.br/blog/esocial/q3-ou-q5-para-ruido-no-ltcat-e-esocial-saiba-qual-metodologia-utilizar"><span>Referência 1</span></a>
+                <a href="http://dspace.sti.ufcg.edu.br:8080/xmlui/bitstream/handle/riufcg/27571/LAÍS%20VAZ%20MENDES%20-%20TCC%20ENG.%20DE%20PRODUÇÃO%20CDSA%202022.pdf?sequence=1&isAllowed=y"><span>Referência 2</span></a>
+                <a href="https://d1wqtxts1xzle7.cloudfront.net/89830743/978-65-995500-5-8-1-libre.pdf?1660754722=&response-content-disposition=inline%3B+filename%3DEstudo_Comparativo_Das_Manifestacoes_Pat.pdf&Expires=1721343324&Signature=QlPyhJymf1QoVy~bboqBb0vVyXN18MxDrUxCyOF3Z4vpnmeIJQMG9knUnM~GUXVYXrQ-UqDZ-7ZeU5vEezpT00ohhGJaWBlr3DmD7mkEfRQ7BJyHcEJeTzOq59akz4STDcNAPyHgjVNkBg7dUVcvGlCIzCWi~dc2a1t5Aq--Dd1y8mM~Y3JayTLiNFHF1yM8SGSzvpZJXADygZpfRkFmE2vEJ9IEUwI9~crzQ39-~qla1nS95JdK9NlQwbwcVe~VVwPy3l3c-IVX7EIWXjrpI2h2DtxZbJUzuQPt1xF2j3baqcGGZnhPOfmW49YjE2ritqx5scMRREPbJXy2ogL61w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=90"><span>Referência 3</span></a>
+                <a href="https://ideiasrj.org.br/cac3/wp-content/uploads/2023/06/LTCAT-HGVF-2023.pdf"><span>Referência 4</span></a>
+            </div>
+        </section>
+        
+        <div class="separador"></div>
+        <section id="art2" class="container mt-5">
+            <h2>Avaliação de Riscos no PGR: Tudo o que deve conter em um cenário hipotético de aplicabilidade</h2>
+            <h3>O que é um PGR?</h3>
+            <p>O PGR é um documento necessário para garantir a segurança e a saúde do trabalhador em atividade laboral. Identifica, avalia e controla os riscos do trabalho. Este artigo compõe em seções como fazer um PGR eficaz, com base em um cenário hipotético em uma fábrica manufatura de produtos eletrônicos, discutindo o passo a passo para os técnicos de Segurança do Trabalho e Engenheiros de Segurança do Trabalho, dentre outros. O PGR é uma série de etapas realizadas com o intuito de identificar, avaliar e controlar os riscos ocupacionais. A estrutura básica de um PGR inclui sete passos que serão explicados a seguir:</p>
+            <ul>
+                <li>Identificação;</li>
+                <li>Avaliação;</li>
+                <li>Elaboração de um plano de ação;</li>
+                <li>Implementação;</li>
+                <li>Monitoramento;</li>
+                <li>Documentação;</li>
+                <li>Treinamento.</li>
+            </ul>
+            <h3>Identificação</h3>
+            <p>A identificação é a primeira etapa do PGR. Essa etapa envolve a identificação dos perigos existentes, ou seja a probabilidade do risco, no ambiente de trabalho. Alguns dos possíveis perigos encontrados no cenário de uma fábrica fabricante de produtos eletrônicos incluem:</p>
+            <ul>
+                <li>Ruído – as máquinas e equipamentos da fábrica emitem diversos níveis de ruído;</li>
+                <li>Produtos Químicos – manipulação de solventes e outros componentes químicos;</li>
+                <li>Ergonomia – postura inadequada durante a fabricação do produto;</li>
+                <li>Eletricidade – risco de choque elétrico durante a fabricação e teste;</li>
+                <li>Intoxicação – os fumos liberados pela solda são prejudiciais por inalação;</li>
+                <li>Incêndio – risco de faíscas emitidas entrarem em contato com materiais inflamáveis;</li>
+            </ul>
+            <p>Matrizes de riscos, checklists e diagrama de fluxos são algumas das ferramentas que podem ser utilizadas para a identificação dos riscos. Além disso, é necessário consultar o histórico documental da fábrica para conhecer como a empresa lida com os acidentes anteriores.</p>
+            <h3>Avaliação</h3>
+            <p>Nesta etapa, com base nos riscos que foram anteriormente identificados, é preciso determinar a urgência e a natureza de cada risco de forma a garantir que essas informações sejam úteis na etapa seguinte. Algumas das técnicas relevantes incluem a Análise Preliminar de Riscos e a Análise de Modos de Falhas e Efeitos. O alto risco de perda auditiva devido ao barulho constante das máquinas, por exemplo, pode ser classificado como alto.</p>
+            <h3>Elaboração de um Plano de Ação</h3>
+            <p>Com base na avaliação dos riscos, um plano de ação deve ser elaborado com medidas de controle. Essas medidas podem incluir:</p>
+            <ul>
+                <li>Eliminação: Remover completamente o risco;</li>
+                <li>Substituição: Substituir a fonte de perigo por outra menos prejudicial;</li>
+                <li>Controles de Engenharia: Isolar ou reduzir o risco por meio de modificações ambientais;</li>
+                <li>Controles Administrativos: Alterar procedimentos e práticas de trabalho;</li>
+                <li>Equipamento de Proteção Individual (EPI): Fornecer EPIs apropriados para proteger os trabalhadores;</li>
+            </ul>
+            <h3>Implementação das Medidas de Controle</h3>
+            <p>A implementação das medidas de controle envolve a efetivação do plano de ação. As mudanças indicadas devem ser realizadas e os EPIs distribuídos. Por exemplo:</p>
+            <ul>
+                <li>Instalar barreiras acústicas em torno de máquinas ruidosas;</li>
+                <li>Substituir solventes perigosos por alternativas menos tóxicas;</li>
+                <li>Prover EPIs para funcionários baseado nos riscos envolvidos em suas atividades.</li>
+            </ul>
+            <h3>Monitoramento</h3>
+            <p>Um monitoramento regular é necessário para avaliar a eficácia das medidas de controle. Isso pode incluir:</p>
+            <ul>
+                <li>Inspeções regulares;</li>
+                <li>Medição dos níveis de exposição dos trabalhadores aos riscos;</li>
+                <li>Ajustes conforme necessário.</li>
+            </ul>
+            <p>Por exemplo, medir o ruído em intervalos regulares para garantir que os níveis de exposição estejam dentro dos limites aceitáveis.</p>
+            <h3>Documentação</h3>
+            <p>A documentação é essencial para garantir que o PGR seja transparente e eficaz. É importante registrar:</p>
+            <ul>
+                <li>Inspeções realizadas;</li>
+                <li>Resultados das avaliações de risco;</li>
+                <li>Treinamentos fornecidos;</li>
+                <li>Ocorrências e incidentes.</li>
+            </ul>
+            <p>Esses registros são úteis para futuras auditorias ou análises do programa.</p>
+            <h3>Treinamento</h3>
+            <p>O treinamento dos colaboradores é crucial, pois sem ele, os trabalhadores não estariam cientes dos perigos. Programas de treinamento devem ser desenvolvidos para educar os trabalhadores sobre os riscos identificados, as medidas de controle implementadas e o uso correto dos EPIs.</p>
+            <h3>Aplicação em uma Fábrica de Manufatura de Produtos Eletrônicos</h3>
+            <p>Vamos considerar uma fábrica de manufatura de produtos eletrônicos. Veja como cada parte do PGR poderia ser aplicada a esse cenário:</p>
+            <ul>
+                <li>Identificação: Perigos como ruído das máquinas, exposição a produtos químicos, riscos ergonômicos e choques elétricos.</li>
+                <li>Avaliação: Classificação dos riscos em alta, média e baixa probabilidade e severidade.</li>
+                <li>Plano de Ação: Implementação de barreiras acústicas, substituição de produtos químicos perigosos por alternativas mais seguras, pausas regulares para evitar problemas ergonômicos e isolamento elétrico nas partes necessárias.</li>
+                <li>Implementação: Realização das modificações necessárias, instalação das barreiras acústicas e distribuição de EPIs.</li>
+                <li>Monitoramento: Realização de leituras regulares dos níveis de ruído e outros riscos.</li>
+                <li>Documentação: Registro detalhado de treinamentos e incidentes.</li>
+                <li>Treinamento: Treinamento regular dos colaboradores sobre os riscos e as medidas de controle implementadas.</li>
+            </ul>
+        </section>
+        <div class="separador"></div>
+        <section id="art3" class="container mt-5">
+            <h2>PCMSO na Prática</h2>
+            <h3>Introdução</h3>
+            <p>O Programa de Controle Médico de Saúde Ocupacional (PCMSO) é de suma importância para a saúde dos colaboradores, complementando o Programa de Gerenciamento de Riscos (PGR). O PCMSO serve para preservar a saúde dos colaboradores, prevenindo e diagnosticando precocemente doenças ocupacionais. Este artigo aborda a implementação prática do PCMSO, utilizando o cenário de uma fábrica de manufatura de produtos eletrônicos descrita no PGR.</p>
+        
+            <h3>Integração com o PGR</h3>
+            <p>O PCMSO deve estar alinhado com o PGR para garantir uma abordagem integrada na gestão dos riscos ocupacionais e da saúde dos trabalhadores. No cenário da fábrica de manufatura de produtos eletrônicos, os riscos identificados no PGR (ruído, produtos químicos, ergonomia, eletricidade, intoxicação e incêndio) são considerados no planejamento do PCMSO.</p>
+        
+            <h3>Etapas do PCMSO</h3>
+            <p>A primeira tarefa do PCMSO é identificar os riscos ocupacionais que podem surgir e talvez agravar a saúde dos trabalhadores. Em uma fábrica, eles incluem:</p>
+            <ul>
+                <li>Ruído: Estar continuamente exposto a níveis de ruído dos equipamentos;</li>
+                <li>Produtos Químicos: Lidar com solventes e outras substâncias químicas;</li>
+                <li>Ergonomia: Má postura durante o processo de fabricação dos produtos;</li>
+                <li>Eletricidade: O risco de lesões elétricas;</li>
+                <li>Intoxicação: Inalação de fumos liberados durante a soldagem;</li>
+                <li>Incêndio: O risco de faíscas e curto-circuitos causando incêndios.</li>
+            </ul>
+        
+            <h3>Avaliação Médica Inicial e Periódica</h3>
+            <p>Dependendo dos riscos identificados, é necessário realizar avaliações médicas iniciais e periódicas dos trabalhadores. Estas envolvem:</p>
+            <ul>
+                <li>Exames de Audiometria: Para registrar o status auditivo dos trabalhadores expostos ao ruído;</li>
+                <li>Exames Toxicológicos: Para avaliar a exposição a produtos químicos;</li>
+                <li>Avaliações Ergonômicas: Para evitar problemas posturais de ergonomia;</li>
+                <li>Exames Clínicos Gerais: Para avaliar os indicadores de saúde em geral;</li>
+            </ul>
+        
+            <h3>Elaboração do Plano de Ação</h3>
+            <p>O plano de ação do PCMSO deve prever medidas corretivas/preventivas com base nos resultados dos exames médicos. Exemplos de tais medidas são:</p>
+            <ul>
+                <li>Programas de Conservação Auditiva: Protetores auditivos e monitoramento regular dos níveis de ruído;</li>
+                <li>Substituição de Produtos Químicos Perigosos: Alternativas menos tóxicas e treinamento em métodos seguros de manuseio;</li>
+                <li>Intervenções Ergonômicas: Modificações no local de trabalho e pausas programadas para evitar distúrbios musculoesqueléticos;</li>
+                <li>Treinamento de Prevenção de Choques Elétricos: Uso de EPI e boas práticas de trabalho com eletricidade.</li>
+            </ul>
+        
+            <h3>Implementação das Medidas de Controle</h3>
+            <p>A implementação de medidas de controle ocorre durante a formulação do plano de ação. As mudanças necessárias são feitas e os trabalhadores devem ser treinados em relação à nova prática de segurança. Exemplos de implementação são:</p>
+            <ul>
+                <li>Instalação de Barreira de Som: Reduzir a exposição ao ruído;</li>
+                <li>Fornecimento de EPI adequado: Protetores auriculares, luvas, óculos de proteção, etc;</li>
+                <li>Substituição de Solventes: Implementar soluções alternativas menos tóxicas e treinar os trabalhadores.</li>
+            </ul>
+        
+            <h3>Monitoramento Contínuo</h3>
+            <p>A supervisão contínua é essencial para garantir a eficácia das medidas de controle implementadas. Isto é feito através de:</p>
+            <ul>
+                <li>Re-exame Médico: A condição de saúde dos funcionários deve ser monitorada através de exames regulares;</li>
+                <li>Monitoramento Regular: O cumprimento das medidas de controle é monitorado, com quaisquer aprimoramentos necessários sendo implementados;</li>
+                <li>Análise de Dados de Saúde: A análise dos resultados dos exames médicos é realizada e o PCMSO ajustado conforme necessário.</li>
+            </ul>
+        
+            <h3>Documentação</h3>
+            <p>Em relação a documentação, é necessário manter registros detalhados das ações e avaliações realizadas para a transparência e eficácia do PCMSO. Isso inclui:</p>
+            <ul>
+                <li>Resultados de Exames Médicos: Documentação dos exames iniciais e periódicos;</li>
+                <li>Treinamentos realizados: Documentação de todos os treinamentos oferecidos aos trabalhadores;</li>
+                <li>Incidentes e Ações Corretivas: Registro de incidentes de saúde e as medidas corretivas tomadas.</li>
+            </ul>
+        
+            <h3>Treinamento e Conscientização</h3>
+            <p>É fundamental o treinamento e a conscientização dos trabalhadores sobre os riscos acerca das medidas de controle. Programas de treinamento devem ser desenvolvidos para educar os trabalhadores sobre:</p>
+            <ul>
+                <li>Riscos Identificados: Compreensão dos riscos presentes no ambiente de trabalho;</li>
+                <li>Medidas de Controle Implementadas: Uso correto dos EPIs e práticas seguras;</li>
+                <li>Importância do Monitoramento: Participação nas avaliações médicas e relatar sintomas precocemente.</li>
+            </ul>
+        
+            <h3>Conclusão</h3>
+            <p>Portanto, é essencial para garantir a saúde e segurança dos trabalhadores a implementação prática do PCMSO alinhada ao PGR. A identificação de riscos, realização de avaliações médicas, a elaboração e implementação de um plano de ação, o monitoramento e treinamentos contínuos são de suma importância para o sucesso de um programa. Um PCMSO eficaz não só protege a saúde dos trabalhadores, mas também contribui para a melhoria contínua do ambiente de trabalho.</p>
+        </section>
+        
+        <div class="separador"></div>
+        <section id="video1" class="container my-5">
+            <h3 class="pb-3">Vídeo de apresentação do blog</h3>
+            <div class="video-wrapper">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AYztY3j5op8" allowfullscreen></iframe>
+            </div>
+            <div class="separador__vid"></div>
+            <h3 class="pb-3">Vídeo sobre EPIs em trabalho em altura</h3>
+            <div class="video-wrapper">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k-8Al-zto_Q" allowfullscreen></iframe>
+            </div>
+            <div class="separador__vid"></div>
+            <h3 class="pb-3">Vídeo de apresentação do Figma</h3>
+            <div class="video-wrapper">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ol_oNLUvFgA" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p class="pt-2">&copy; 2024 SST Blog. Todos direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/scripts/main.js"></script>
+</body>
+</html>

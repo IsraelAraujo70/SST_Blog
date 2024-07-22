@@ -1,0 +1,221 @@
+@import "maps.less";
+@import "operations.less";
+
+body {
+    background-color: @colors[fundo2];
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+// Estilos do Cabeçalho
+
+.cabecalho {
+    background-color: @colors[fundo];
+    &__navs {
+        gap: 0.7em;
+    }
+    &__titulo {
+        cursor: pointer;
+        &__txt {
+            font-weight: 700;
+            font-size: 1.6em;
+            color: @colors[texto2];
+            &__destaque {
+                color: @colors[destq];
+            }
+        }
+    }
+    &__botao {
+        border-color: @colors[texto2];
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+}
+
+// Estilos dos Links de Navegação
+
+.nav-link {
+    color: @colors[texto2];
+    padding: 0.5em;
+    box-sizing: border-box;
+    border: solid 2px transparent;
+    transition: border 0.3s, color 0.3s;
+    &:hover {
+        color: @colors[destq];
+        border-color: @colors[destq];
+    }
+    &.active {
+        background-color: transparent !important;
+        border-color: @colors[fundo2];
+    }
+}
+
+.separador{
+    padding: 2px;
+    background-color: #e3e3e3;
+
+    &__vid{
+        padding: 1px;
+        background-color: #e3e3e3;
+        margin-bottom: 3em;
+    }
+}
+
+// Estilos do Rodapé
+
+footer {
+    background-color: @colors[fundo];
+    color: @colors[texto2];
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+// Estilos da Seção 
+
+#art1,
+#art2,
+#art3 {
+    text-align: justify;
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: @colors[fundo2];
+    border-radius: 0.5rem;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: @colors[destq];
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: @colors[texto];
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: @colors[texto];
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+
+        li {
+            font-size: 1rem;
+            color: @colors[texto];
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+
+            strong {
+                color: @colors[destq];
+            }
+        }
+    }
+
+    .references {
+        font-size: 1rem;
+        color: @colors[texto];
+        margin-top: 2rem;
+        max-width: 600px;
+        width: 100%;
+        a {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            background-color: @colors[destq];
+            color: @colors[texto2];
+            padding: 0.5em 1em;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            transition: color 0.3s, background-color 0.3s;
+            position: relative;
+            overflow: hidden;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: @colors[fundo];
+                z-index: 0;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &:hover:before {
+                transform: translateX(0);
+            }
+
+            &:hover {
+                color: @colors[texto2];
+            }
+
+            span {
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+#video1 {
+    h3{
+        font-size: 2rem;
+        font-weight: 700;
+        color: @colors[destq];
+        margin-bottom: 1rem;
+    }
+    
+    .video-container {
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 ratio */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 0 auto;
+        margin-bottom: 3em;
+    
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1023px){
+    .cabecalho {
+    &__navs{
+        text-align: center;
+    }
+    }
+    .container{
+        width: 80%;
+    }
+}
